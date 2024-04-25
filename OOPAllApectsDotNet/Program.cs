@@ -15,9 +15,12 @@ namespace OOPAllApectsDotNet
 			//Person person = new Person("Panos Bozas");
 			//person.Work();
 
-   //         Console.WriteLine(person.Name);
-   //         Console.WriteLine(person);
+			//         Console.WriteLine(person.Name);
+			//         Console.WriteLine(person);
 			//Console.WriteLine(person.ToString());
-		}
+
+			Student student = new Student("Nick Lamprou");
+            Console.WriteLine(student.Name);
+        }
 	}
 }
