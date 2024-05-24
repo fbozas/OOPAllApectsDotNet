@@ -37,6 +37,10 @@ namespace OOPAllApectsDotNet
 				student,student1,student2, student3, student4,
 				student5,student6
 			};
+
+			Teacher teacher = new Teacher("Nasos Pappas");
+            teacher.Read();
+			student.Read();
         }
 	}
 }
