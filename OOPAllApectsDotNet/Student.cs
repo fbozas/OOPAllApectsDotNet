@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPAllApectsDotNet
 {
-	internal class Student : Person
+	public class Student : Person
 	{
 		public Student(string name) : base(name)
 		{

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPAllApectsDotNet
 {
-	internal abstract class Person : ICrudable
+	public abstract class Person : ICrudable
 	{
 		private string _name;
 		public string Name
