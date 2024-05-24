@@ -49,6 +49,23 @@ namespace OOPAllApectsDotNet
 				//Console.WriteLine(person.Work());
 				person.Create();
             }
+
+            Console.WriteLine();
+            Console.WriteLine("Interfaces Grouping");
+			Product product1 = new Product() { Name = "My First Product" };
+            Product product2 = new Product() { Name = "My Second Product" };
+
+            List<ICrudable> interfacesGroupingList = new List<ICrudable>()
+			{
+                student,student1,student2, student3, student4,
+                student5,student6, teacher, teacher1, teacher2,
+				product1, product2
+            };
+
+			foreach (var crudable in interfacesGroupingList) 
+			{
+                Console.WriteLine(crudable);
+            }
         }
 	}
 }
