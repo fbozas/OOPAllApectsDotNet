@@ -41,6 +41,8 @@ namespace OOPAllApectsDotNet
 			Teacher teacher = new Teacher("Nasos Pappas");
             teacher.Read();
 			student.Read();
+			student.Create();
+			teacher.Create();
         }
 	}
 }

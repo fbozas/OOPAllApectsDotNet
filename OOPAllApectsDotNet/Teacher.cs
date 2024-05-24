@@ -16,5 +16,26 @@ namespace OOPAllApectsDotNet
         {
             return "to teach";
         }
+
+
+        public override void Create()
+        {
+            Console.WriteLine($"The teacher with name: {Name} has been created");
+        }
+
+        public override void Read()
+        {
+            Console.WriteLine($"The teacher with name: {Name} has been read");
+        }
+
+        public override void Update()
+        {
+            Console.WriteLine($"The teacher with name: {Name} has been updated");
+        }
+
+        public override void Delete()
+        {
+            Console.WriteLine($"The teacher with name: {Name} has been deleted");
+        }
     }
 }
