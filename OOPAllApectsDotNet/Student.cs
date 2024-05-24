@@ -37,5 +37,10 @@ namespace OOPAllApectsDotNet
         {
             Console.WriteLine($"The student with name: {Name} has been deleted");
         }
+
+        public override string ToString()
+        {
+            return "Student: " + Name;
+        }
     }
 }

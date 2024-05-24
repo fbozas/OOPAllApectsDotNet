@@ -27,7 +27,11 @@ namespace OOPAllApectsDotNet
 			Student student5 = new Student("Tasos Lelakis");
 			Student student6 = new Student("Kostas Lamprou");
 
-			Console.WriteLine(student.Name);
+            Teacher teacher = new Teacher("Nasos Pappas");
+            Teacher teacher1 = new Teacher("Mike Nikolopoulos");
+            Teacher teacher2 = new Teacher("Peter Bozas");
+
+            Console.WriteLine(student.Name);
 
             Console.WriteLine("-----------");
 
@@ -35,14 +39,16 @@ namespace OOPAllApectsDotNet
 			List<Person> inheritanceList = new List<Person>()
 			{ 
 				student,student1,student2, student3, student4,
-				student5,student6
-			};
+				student5,student6, teacher, teacher1, teacher2
+            };
 
-			Teacher teacher = new Teacher("Nasos Pappas");
-            teacher.Read();
-			student.Read();
-			student.Create();
-			teacher.Create();
+            Console.WriteLine("Getting All people");
+			foreach(var person in inheritanceList)
+			{
+				//Console.WriteLine(person);
+				//Console.WriteLine(person.Work());
+				person.Create();
+            }
         }
 	}
 }
